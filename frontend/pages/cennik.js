@@ -43,13 +43,13 @@ const Pricing = ({ prices, desc, meta }) => {
 export default Pricing;
 
 export async function getStaticProps() {
-	const resPrice = await fetch("http://localhost:1337/api/prices");
+	const resPrice = await fetch(`${process.env.STRAPIURL}/prices`);
 	const prices = await resPrice.json();
 
-	const resDesc = await fetch("http://localhost:1337/api/desc");
+	const resDesc = await fetch(`${process.env.STRAPIURL}/desc`);
 	const desc = await resDesc.json();
 
-	const resMeta = await fetch("http://localhost:1337/api/meta");
+	const resMeta = await fetch(`${process.env.STRAPIURL}/meta`);
 	const meta = await resMeta.json();
 
 	return {

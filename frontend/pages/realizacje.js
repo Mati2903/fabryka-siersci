@@ -46,10 +46,10 @@ const Gallery = ({ meta, img }) => {
 export default Gallery;
 
 export async function getStaticProps() {
-	const resMeta = await fetch("http://localhost:1337/api/meta");
+	const resMeta = await fetch(`${process.env.STRAPIURL}/meta`);
 	const meta = await resMeta.json();
 
-	const resImage = await fetch("http://localhost:1337/api/images?populate=*");
+	const resImage = await fetch(`${process.env.STRAPIURL}/images?populate=*`);
 	const img = await resImage.json();
 
 	return {

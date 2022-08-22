@@ -24,10 +24,10 @@ const About = ({ meta, about }) => {
 export default About;
 
 export async function getStaticProps() {
-	const resMeta = await fetch("http://localhost:1337/api/meta");
+	const resMeta = await fetch(`${process.env.STRAPIURL}/meta`);
 	const meta = await resMeta.json();
 
-	const resAbout = await fetch("http://localhost:1337/api/about");
+	const resAbout = await fetch(`${process.env.STRAPIURL}/about`);
 	const about = await resAbout.json();
 
 	return {

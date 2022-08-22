@@ -19,7 +19,7 @@ const Statute = ({ statute }) => {
 export default Statute;
 
 export async function getStaticProps() {
-	const resStatute = await fetch("http://localhost:1337/api/statute");
+	const resStatute = await fetch(`${process.env.STRAPIURL}/statute`);
 	const statute = await resStatute.json();
 
 	return {

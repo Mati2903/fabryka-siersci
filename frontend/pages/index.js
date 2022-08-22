@@ -29,10 +29,10 @@ export default function Home({ meta, home }) {
 	);
 }
 export async function getStaticProps() {
-	const resMeta = await fetch("http://localhost:1337/api/meta");
+	const resMeta = await fetch(`${process.env.STRAPIURL}/meta`);
 	const meta = await resMeta.json();
 
-	const resHome = await fetch("http:localhost:1337/api/homepage");
+	const resHome = await fetch(`${process.env.STRAPIURL}/homepage`);
 	const home = await resHome.json();
 
 	return {
