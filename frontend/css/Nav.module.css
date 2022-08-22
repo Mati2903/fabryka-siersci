@@ -1,0 +1,188 @@
+.nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  background-color: black;
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav p {
+  margin-left: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav .nav__close {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  top: 40px;
+  right: 0;
+  width: 60vw;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+  background-color: black;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  -webkit-transform: translateY(-50vh);
+          transform: translateY(-50vh);
+  list-style: none;
+}
+
+.nav .nav__close li {
+  margin-right: 15px;
+}
+
+.nav .nav__close li a {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+.nav .nav__open {
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  top: 70px;
+  right: 0;
+  width: 60vw;
+  height: 40vh;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+  background-color: black;
+}
+
+.nav .nav__open li {
+  margin-right: 15px;
+}
+
+.nav .nav__open li a {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  opacity: 1;
+  font-size: 1.5rem;
+}
+
+.nav .hamburger__close {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav .hamburger__close .hamburger__icon {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: relative;
+  height: 4px;
+  width: 50px;
+  top: 23px;
+  right: 10px;
+  background-color: #fff;
+}
+
+.nav .hamburger__close .hamburger__icon::before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  top: -15px;
+  background-color: #fff;
+  content: "";
+}
+
+.nav .hamburger__close .hamburger__icon::after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  top: 15px;
+  background-color: #fff;
+  content: "";
+}
+
+.nav .hamburger__open {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.nav .hamburger__open .hamburger__icon {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: relative;
+  height: 4px;
+  width: 50px;
+  top: 23px;
+  right: 10px;
+  background-color: transparent;
+}
+
+.nav .hamburger__open .hamburger__icon::before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  top: -15px;
+  background-color: #fff;
+  content: "";
+  -webkit-transform: rotateZ(45deg) scaleX(1.25) translate(10px, 10px);
+          transform: rotateZ(45deg) scaleX(1.25) translate(10px, 10px);
+}
+
+.nav .hamburger__open .hamburger__icon::after {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: absolute;
+  height: 4px;
+  width: 50px;
+  top: 15px;
+  background-color: #fff;
+  content: "";
+  -webkit-transform: rotateZ(-45deg) scaleX(1.25) translate(9px, -9px);
+          transform: rotateZ(-45deg) scaleX(1.25) translate(9px, -9px);
+}
+/*# sourceMappingURL=Nav.module.css.map */

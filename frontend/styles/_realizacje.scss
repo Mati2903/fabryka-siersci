@@ -1,0 +1,38 @@
+.gallery {
+	&__title {
+		font-size: 2.7rem;
+		text-align: center;
+	}
+	//style for background image
+	&__image {
+		z-index: -1;
+		position: absolute;
+		transform: translateX(-50%);
+		overflow: hidden;
+		left: 50%;
+		bottom: 100px;
+		width: 270px;
+		opacity: 0.5;
+	}
+}
+//styles for gallery
+.image-gallery {
+	margin-top: 10vh;
+}
+.image-gallery-icon {
+	z-index: 1 !important;
+	&:active {
+		color: #337ab7;
+	}
+}
+.image-gallery-play-button {
+	display: none;
+}
+
+//media queries
+//for iphone 7/8/SE screen heights
+@media screen and (max-height: 670px) {
+	.gallery {
+		margin-top: -30px; //this is for iphone 7,8 and SE size
+	}
+}

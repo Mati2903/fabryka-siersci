@@ -1,0 +1,13 @@
+.statute {
+	&__title {
+		text-align: center;
+		font-size: $title-font-size;
+	}
+
+	&__list {
+		font-family: $paragraph-font-family;
+		font-size: $description-font-size;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}

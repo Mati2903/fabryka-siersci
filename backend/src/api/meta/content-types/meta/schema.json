@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "metas",
+  "info": {
+    "singularName": "meta",
+    "pluralName": "metas",
+    "displayName": "Meta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "metaHomeTitle": {
+      "type": "string"
+    },
+    "metaKeywords": {
+      "type": "text"
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "metaAboutTitle": {
+      "type": "string"
+    },
+    "metaPricesTitle": {
+      "type": "string"
+    },
+    "metaGalleryTitle": {
+      "type": "string"
+    },
+    "metaContactTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.prices {
+	.prices__title {
+		text-align: center;
+		font-size: $title-font-size;
+	}
+	.prices__list {
+		padding: 0 4vw;
+	}
+	.prices-red {
+		color: red;
+	}
+	.prices-blue {
+		color: blue;
+	}
+	.prices-green {
+		color: green;
+		margin: 0 auto;
+	}
+
+	//promocja gdy false to brak elementu w cenniku
+	.prices__false {
+		display: none;
+	}
+	.prices__true {
+		display: inline-block;
+		color: white;
+		background-color: royalblue;
+		border-radius: 5px;
+		padding: 0 5px;
+		font-size: 1.1rem;
+	}
+
+	.prices__name {
+		display: inline-block;
+		font-size: $paragraph-font-size;
+		font-family: $paragraph-font-family;
+	}
+
+	.prices__price {
+		display: inline-block;
+		font-family: $paragraph-font-family;
+	}
+
+	.prices__list-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		border-bottom: 1px solid #b2b2b2;
+	}
+
+	.prices__description {
+		text-align: center;
+		padding: 0 20px;
+	}
+}
+
+//media queries
+//for iphone 7/8/SE screen heights
+@media screen and (max-height: 670px) {
+	.prices {
+		margin-top: -30px; //this is for iphone 7,8 and SE size
+	}
+}

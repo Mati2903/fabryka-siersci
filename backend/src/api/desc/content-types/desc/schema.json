@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "descs",
+  "info": {
+    "singularName": "desc",
+    "pluralName": "descs",
+    "displayName": "Opis cennika",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "opis": {
+      "type": "richtext"
+    }
+  }
+}

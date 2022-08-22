@@ -1,0 +1,47 @@
+.home {
+	text-align: center;
+	padding: 0 1rem;
+
+	&__header-title {
+		font-size: $title-font-size;
+		margin-bottom: 10px;
+	}
+	&__header-description {
+		font-size: $description-font-size;
+	}
+	&__paragraph {
+		font-family: $paragraph-font-family;
+		font-size: $paragraph-font-size;
+	}
+	&__news {
+		font-family: $paragraph-font-family;
+		font-size: $paragraph-font-size;
+	}
+
+	&__image {
+		z-index: 2;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 160px;
+		bottom: 87px;
+		height: 15.6rem;
+		color: transparent;
+	}
+}
+
+@media screen and (min-width: 340px) {
+	.home__image {
+		left: 150px;
+		bottom: 79px;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	.home {
+		margin-top: -30px;
+		&__image {
+			height: 180px;
+			left: 115px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.footer {
+	width: 100%;
+	flex-basis: 80px;
+	display: flex;
+	border-top: 2px solid #eaeaea;
+	gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	&__copyright {
+		font-size: 1rem;
+	}
+	&__socials {
+		font-size: 2rem;
+	}
+	&__facebook {
+		margin-right: 15px;
+	}
+}

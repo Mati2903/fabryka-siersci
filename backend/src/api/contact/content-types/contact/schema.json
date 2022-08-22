@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Kontakt"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "telefon": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "adres": {
+      "type": "string"
+    }
+  }
+}

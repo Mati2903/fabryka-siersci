@@ -1,0 +1,52 @@
+.contact {
+	padding: 0 10vw;
+
+	.contact__title {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+	a,
+	p {
+		margin-bottom: 1.5rem;
+		display: block;
+		font-size: 1.3rem;
+		font-style: normal;
+	}
+	&__image {
+		z-index: 2;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 120px;
+		bottom: 49px;
+		width: 250px;
+		color: transparent;
+	}
+}
+
+//media queries
+//for iphone 7/8/SE screen heights
+@media screen and (max-height: 670px) and (max-width: 365px) {
+	.contact {
+		margin-top: -30px; //this is for iphone 7,8 and SE size
+		&__image {
+			width: 200px;
+			left: 100px;
+			bottom: 56px;
+		}
+		& a,
+		p {
+			font-size: 1.1rem;
+		}
+	}
+}
+// @media screen and (max-width: 370px) {
+// 	.contact {
+// 		&__image {
+// 			bottom: 51px;
+// 		}
+// 		& a,
+// 		p {
+// 			font-size: 1.1rem;
+// 		}
+// 	}
+// }

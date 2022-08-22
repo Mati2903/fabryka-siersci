@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Strona główna",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tytul": {
+      "type": "string"
+    },
+    "podtytul": {
+      "type": "string"
+    },
+    "opis": {
+      "type": "text"
+    },
+    "aktualnosci": {
+      "type": "richtext"
+    }
+  }
+}
